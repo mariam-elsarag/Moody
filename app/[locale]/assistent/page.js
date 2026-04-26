@@ -1,6 +1,6 @@
-import Record from "../_components/feature/chat/Record";
-import Shape from "../_components/ui/Shape";
-import Wave from "../_components/ui/Wave";
+import Record from "../../_components/feature/assistent/Record";
+import Shape from "../../_components/ui/Shape";
+import Wave from "../../_components/ui/Wave";
 
 const Home = () => {
   return (

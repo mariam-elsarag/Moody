@@ -1,3 +1,11 @@
 {
-  "home": "Home"
+  "mic_permission_denied": "Microphone permission denied",
+  "mediaRecorder_not_support": "MediaRecorder not supported",
+  "greating": "Good evening, {name}.",
+  "how_are_you_fealing": "How are you feeling right now?",
+  "down": "Down",
+  "neutral": "Neutral",
+  "peacful": "Peaceful",
+  "happy": "Happy",
+  "inspired": "Inspired"
 }
