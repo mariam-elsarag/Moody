@@ -26,7 +26,6 @@ export default async function RootLayout({ children, params }) {
     (m) => m.default,
   );
   const dir = locale === "ar" ? "rtl" : "ltr";
-
   return (
     <html
       lang={locale}
@@ -37,10 +36,7 @@ export default async function RootLayout({ children, params }) {
       <body className="">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Provider>
-            <div className="min-h-full flex flex-col">
-              <Navbar />
-              {children}
-            </div>
+            <div className="min-h-full flex flex-col">{children}</div>
           </Provider>
         </NextIntlClientProvider>
       </body>

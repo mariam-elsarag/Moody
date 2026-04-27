@@ -1,4 +1,5 @@
-export { default as Logo } from "./logo/logo.svg";
+export { default as LogoEn } from "./logo/logo.svg";
+export { default as LogoAr } from "./logo/logo_ar.svg";
 
 // emoji
 export { default as DownEmoji } from "./icons/down.svg";

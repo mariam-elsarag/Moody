@@ -1,3 +1,16 @@
 {
-  "home": "الرئيسية"
+  "mic_permission_denied": "تم رفض إذن استخدام الميكروفون",
+  "mediaRecorder_not_support": "المتصفح لا يدعم تسجيل الصوت",
+  "greating": "مساء الخير، {name}.",
+  "how_are_you_fealing": "كيف تشعر الآن؟",
+  "down": "حزين",
+  "neutral": "محايد",
+  "peacful": "هادئ",
+  "happy": "سعيد",
+  "inspired": "ملهم",
+  "getStarted": "ابدأ الآن",
+  "features": "المميزات",
+  "methodology": "المنهجية",
+  "support": "الدعم",
+  "lang": "English"
 }

@@ -34,7 +34,7 @@ const Button = ({
   const sizes = {
     lg: " text-sm sm:text-base  h-12 px-2 sm:px-4 ",
     md: " text-xs sm:text-sm h-11 px-4 ",
-    sm: "px-6 h-9 tracking-[1px] text-[10px]",
+    sm: "px-4 h-9 tracking-[1px] text-xs",
     free: "",
   };
 
