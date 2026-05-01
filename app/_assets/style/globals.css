@@ -4,6 +4,8 @@
   --color-primary: #6366f1;
   --color-primary-2: #818cf8;
   --color-primary-3: #a5b4fc;
+  --color-primary-4: #4648d4;
+  --color-primary-5: #4338ca;
   --color-primary-container: #6063ee;
 
   --color-tertiary: #94a3b8;
@@ -17,6 +19,9 @@
 
   --shadow-primary: 0px 10px 30px 0px #6366f166;
   --shadow-white: 0px 0px 10px 0px #ffffff4d;
+  --shadow-landing-hero: 0px 25px 50px -12px #00000040;
+
+  --breakpoint-xs: 500px;
 }
 
 @layer base {
@@ -27,6 +32,14 @@
     @apply transition-all ease-in-out duration-300;
   }
 }
+@layer utilities {
+  .section_p {
+    @apply py-10 md:py-16 lg:py-[96px];
+  }
+  .glass {
+    @apply bg-[#1E293B66] border border-white/10 backdrop-blur-[10px];
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -35,40 +48,8 @@ body {
   background: #020617;
   overflow-x: hidden;
 }
-/* fonts */
-.h1 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.2em;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-}
-.body_lg {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-.body_md {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-.label_caps {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.05em;
-}
-.helper_text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.4;
+html[dir="rtl"] body {
+  font-family: var(--font-lora);
 }
 
 /* --------------- start react toast --------------- */
@@ -176,32 +157,9 @@ h2 {
   max-width: 1536px;
   width: 100%;
   margin: auto;
-  padding-inline-start: 48px;
-  padding-inline-end: 48px;
+  padding-inline: 60px;
 }
 
-/* --------------- start responsive ------------------ */
-@media (max-width: 991px) {
-  .landing_container {
-    padding-inline-start: 32px;
-    padding-inline-end: 32px;
-  }
-}
-@media (max-width: 768px) {
-  .Container,
-  .landing_container {
-    padding-inline-start: 24px;
-    padding-inline-end: 24px;
-  }
-}
-@media (max-width: 640) {
-  .Container,
-  .landing_container {
-    padding-inline-start: 16px;
-    padding-inline-end: 16px;
-  }
-}
-/* --------------- end responsive ------------------ */
 /* shadow */
 .shadow_primary {
   box-shadow: 0px 0px 40px 0px #4648d480;
@@ -279,4 +237,63 @@ button {
     transform: scale(1.8);
     opacity: 0;
   }
+}
+/* --------------- start landing ------------------ */
+.text_gradiant {
+  background: linear-gradient(90deg, #818cf8, #c084fc, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.landing_gradiant {
+  background: linear-gradient(90deg, #818cf8, #22d3ee);
+  opacity: 0.25;
+}
+
+/* --------------- end landing ------------------ */
+
+/* --------------- start responsive ------------------ */
+@media (max-width: 1024px) {
+  .landing_container {
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .landing_container {
+    padding-inline: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .Container,
+  .landing_container {
+    padding-inline: 24px;
+  }
+}
+
+@media (max-width: 640) {
+  .Container,
+  .landing_container {
+    padding-inline: 16px;
+  }
+}
+/* --------------- end responsive ------------------ */
+@keyframes blobMove {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  25% {
+    transform: translate(-30px, -20px) scale(1.1);
+  }
+  50% {
+    transform: translate(-10px, -40px) scale(0.95);
+  }
+  75% {
+    transform: translate(20px, -10px) scale(1.05);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blobMove 8s ease-in-out infinite;
 }

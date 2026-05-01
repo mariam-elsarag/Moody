@@ -12,5 +12,17 @@
   "features": "Features",
   "methodology": "Methodology",
   "support": "Support",
-  "lang": "عربى"
+  "lang": "عربى",
+  "talk_to_moody": "Talk to Moody...",
+  "join_mody_text": "Joined by {seakers}k+ seekers this week",
+  "feature_title": "Empathetic tools for your mind",
+  "feature_descripton": "Designed to be your safe space for reflection, growth, and emotional clarity.",
+  "ai_assistant": "AI Assistant",
+  "ai_assistant_descripton": "24/7 emotional support that learns your patterns. Whether it's midnight anxiety or mid-day stress, Moody is always ready to talk.",
+  "smart_journal": "Smart Journal",
+  "smart_journal_description": "Guided prompts that help you dig deeper into your feelings than a blank page ever could.",
+  "deep_insights": "Deep Insights",
+  "deep_insights_description": "Visualize your mood trends over time with beautiful, calm data visualizations.",
+  "smart_suggestions": "Smart Suggestions",
+  "smart_suggestions_description": "Actionable steps based on your conversations. From breathing exercises to gentle habit nudges, we help you take the next step."
 }

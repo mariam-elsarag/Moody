@@ -1,4 +1,4 @@
-import { Manrope } from "next/font/google";
+import { Lora, Manrope } from "next/font/google";
 import "../_assets/style/globals.css";
 import Navbar from "../_components/layout/Navbar";
 import { NextIntlClientProvider } from "next-intl";
@@ -9,6 +9,13 @@ const manrope = Manrope({
   variable: "--font-manrope",
   display: "swap",
 });
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
+  display: "swap",
+});
+// const freeSerif = Free;
 export const metadata = {
   title: {
     default: "Moody",
@@ -30,7 +37,7 @@ export default async function RootLayout({ children, params }) {
     <html
       lang={locale}
       dir={dir}
-      className={`${manrope.variable} h-full antialiased`}
+      className={`${manrope.variable} ${lora.variable} h-full antialiased`}
     >
       {" "}
       <body className="">

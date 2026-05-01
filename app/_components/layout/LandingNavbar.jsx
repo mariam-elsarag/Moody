@@ -59,14 +59,14 @@ const LandingNavbar = () => {
   return (
     <>
       {/* navbar for large screen */}
-      <header className="landing_container  justify-between  fixed left-1/2 -translate-x-1/2 top-0 h-[65px] backdrop-blur-md flex_center text-white border-b border-[#1E293B80] bg-[#0F172A99]">
+      <header className="landing_container  justify-between fixed left-1/2 -translate-x-1/2 z-50  h-[65px] backdrop-blur-md flex_center text-white border-b border-[#1E293B80] bg-[#0F172A99]">
         <Logo />
         <nav className="hidden sm:flex items-center gap-6">
           {navList?.map((navlink) => {
             return (
               <Link
                 key={navlink?.id}
-                className={`font-medium text-base ${activeSection === navlink.url ? "text-primary-2" : "text-[#94A3B8]"}`}
+                className={`font-medium text-base ${activeSection === navlink.url ? "text-primary-2 decoration-primary-2" : "text-[#94A3B8] hover:text-primary-2 decoration-transparent hover:decoration-primary-2 "} transition underline underline-offset-8`}
                 href={`/${locale}/landing${navlink?.url}`}
                 onClick={(e) => {
                   const hash = navlink.url;
