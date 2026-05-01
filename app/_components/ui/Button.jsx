@@ -25,6 +25,7 @@ const Button = ({
   const styles = {
     primary:
       "bg-primary shadow-primary text-white hover:bg-primary-container  ",
+    white: "text-[#4F46E5] bg-white",
     glass:
       " bg-white/4 text-tertiary border border-white/5 backdrop-blur-[20px] hover:bg-white/10",
   };
@@ -32,6 +33,7 @@ const Button = ({
     bold: "font-bold",
   };
   const sizes = {
+    xl: " h-[60px] md:h-[66px] px-10 text-sm md:text-base",
     lg: " text-sm sm:text-base  h-12 px-2 sm:px-4 ",
     md: " text-xs sm:text-sm h-11 px-4 ",
     sm: "px-4 h-9 tracking-[1px] text-xs",

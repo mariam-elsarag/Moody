@@ -20,8 +20,10 @@
   --shadow-primary: 0px 10px 30px 0px #6366f166;
   --shadow-white: 0px 0px 10px 0px #ffffff4d;
   --shadow-landing-hero: 0px 25px 50px -12px #00000040;
+  --shadow-purple: 0px 25px 50px -12px #312e8180;
 
   --breakpoint-xs: 500px;
+  --drop-shadow-primary: 0 25px 50px rgba(49, 46, 129, 0.5);
 }
 
 @layer base {
@@ -296,4 +298,16 @@ button {
 
 .animate-blob {
   animation: blobMove 8s ease-in-out infinite;
+}
+
+.cta_section_contaienr::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url("../images/general/abstract_overlay.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
 }
