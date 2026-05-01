@@ -1,3 +1,4 @@
+import Footer from "@/app/_components/layout/Footer";
 import LandingNavbar from "@/app/_components/layout/LandingNavbar";
 
 export const metadata = {
@@ -9,8 +10,11 @@ export const metadata = {
 const layout = ({ children }) => {
   return (
     <div className="min-h-screen bg-[#0F172A66] flex flex-col justify-between">
-      <LandingNavbar />
-      {children}
+      <div className="flex flex-col">
+        <LandingNavbar />
+        {children}
+      </div>
+      <Footer />
     </div>
   );
 };

@@ -25,7 +25,7 @@ const HeroSkeleton = () => {
         {/* input skeleton */}
         <div className="relative w-full max-w-[672px] mt-4">
           {/* gradient glow */}
-          <div className="landing_gradiant h-[72px] w-full blur-sm rounded-full absolute top-1/2 -translate-y-1/2" />
+          <div className="landing_gradiant h-[60px] sm:h-[72px] w-full blur-sm rounded-full absolute top-1/2 -translate-y-1/2" />
 
           {/* glass input */}
           <div className="w-full flex items-center justify-between gap-2 border border-white/10 bg-white/5 backdrop-blur-xl rounded-full p-2 relative z-[10] animate-pulse">
