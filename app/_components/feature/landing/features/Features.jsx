@@ -113,7 +113,7 @@ const Features = () => {
             variants={isMd ? containerVariants : undefined}
             initial={isMd ? "hidden" : false}
             whileInView={isMd ? "show" : undefined}
-            viewport={{ once: false, margin: "-300px" }}
+            viewport={{ once: true }}
             className="grid grid-cols-1 xs:grid-cols-12 gap-4 md:gap-6"
           >
             {" "}

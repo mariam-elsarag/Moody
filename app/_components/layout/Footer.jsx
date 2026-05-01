@@ -11,7 +11,7 @@ const footerLinks = [
     links: [
       { id: 1, label: "features", url: "#features" },
       { id: 2, label: "methodology", url: "#methodology" },
-      { id: 3, label: "support", url: "#support" },
+      { id: 3, label: "faq", url: "#faq" },
     ],
   },
   {

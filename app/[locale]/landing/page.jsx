@@ -1,4 +1,5 @@
 import Spinner from "@/app/_components/feadback/Spinner";
+import Faq from "@/app/_components/feature/landing/Faq";
 import Features from "@/app/_components/feature/landing/features/Features";
 import Hero from "@/app/_components/feature/landing/hero/Hero";
 import HeroSkeleton from "@/app/_components/feature/landing/hero/HeroSkeleton";
@@ -13,6 +14,7 @@ const page = async () => {
         <HeroWrapper />
       </Suspense>
       <Features />
+      <Faq />
     </div>
   );
 };

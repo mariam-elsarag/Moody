@@ -12,7 +12,7 @@ import Logo from "../ui/Logo";
 const navList = [
   { id: 1, label: "features", url: "#features" },
   { id: 2, label: "methodology", url: "#methodology" },
-  { id: 3, label: "support", url: "#support" },
+  { id: 3, label: "faq", url: "#faq" },
 ];
 const LandingNavbar = () => {
   const t = useTranslations();
@@ -22,7 +22,6 @@ const LandingNavbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const [openNavbar, setOpenNavbar] = useState(false);
   const ref = useOutsideClick(() => setOpenNavbar(false));
-
   useEffect(() => {
     const sections = navList
       .map((item) => document.querySelector(item.url))
@@ -30,23 +29,21 @@ const LandingNavbar = () => {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        let found = false;
+        const visibleSections = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-            found = true;
-          }
-        });
-
-        if (!found) {
+        if (visibleSections.length > 0) {
+          const topSection = visibleSections[0];
+          setActiveSection(`#${topSection.target.id}`);
+        } else {
+          // 👇 FIX: clear active when nothing visible
           setActiveSection("");
         }
       },
       {
-        root: null,
-        rootMargin: "-40% 0px -55% 0px",
-        threshold: 0,
+        rootMargin: "-30% 0px -50% 0px",
+        threshold: 0.1,
       },
     );
 
