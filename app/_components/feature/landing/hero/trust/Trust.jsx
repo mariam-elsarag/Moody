@@ -72,7 +72,7 @@ const Trust = () => {
           variants={itemVariants}
           initial="hidden"
           whileInView="show"
-          className="text-white font-bold text-[32px] tracking-[-.64px]"
+          className="text-white font-bold text-2xl xs:text-[32px] tracking-[-.64px]"
         >
           {t("trust_section_title")}
         </motion.h1>
@@ -81,7 +81,7 @@ const Trust = () => {
           variants={itemVariants}
           initial="hidden"
           whileInView="show"
-          className="max-w-[702px] text-tertiary text-base"
+          className="max-w-[702px] text-tertiary text-sm xs:text-base"
         >
           {t("trust_section_description")}
         </motion.p>
@@ -90,7 +90,7 @@ const Trust = () => {
           variants={itemVariants}
           initial="hidden"
           whileInView="show"
-          className="max-w-[720px] grid grid-cols-2 gap-8"
+          className="max-w-[720px] grid sm:grid-cols-2 gap-4 sm:gap-8"
         >
           {trust?.map((item) => (
             <div
@@ -104,10 +104,12 @@ const Trust = () => {
                 height={item?.height}
               />
               <div className="flex flex-col gap-1 text-start">
-                <h2 className="text-white font-bold text-base">
+                <h2 className="text-white font-bold text-sm xs:text-base">
                   {t(item?.title)}
                 </h2>
-                <p className="text-tertiary text-sm">{t(item?.description)}</p>
+                <p className="text-tertiary text-xs xs:text-sm">
+                  {t(item?.description)}
+                </p>
               </div>
             </div>
           ))}
