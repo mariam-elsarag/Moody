@@ -11,6 +11,7 @@
   --color-tertiary: #94a3b8;
 
   --color-background: #0f172a;
+  --color-glass-bg: #1e293b;
 
   --color-error-container: #f43f5e;
   --color-success-container: #10b981;
@@ -37,6 +38,9 @@
 @layer utilities {
   .section_p {
     @apply py-10 md:py-16 lg:py-[96px];
+  }
+  .main_gap {
+    @apply gap-[64px];
   }
   .glass {
     @apply bg-[#1E293B66] border border-white/10 backdrop-blur-[10px];

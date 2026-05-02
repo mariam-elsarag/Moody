@@ -5,6 +5,7 @@ import Features from "@/app/_components/feature/landing/features/Features";
 import Hero from "@/app/_components/feature/landing/hero/Hero";
 import HeroSkeleton from "@/app/_components/feature/landing/hero/HeroSkeleton";
 import HeroWrapper from "@/app/_components/feature/landing/hero/HeroWrapper";
+import HowItWorks from "@/app/_components/feature/landing/howItWorks/HowItWorks";
 import { getLandingHeroData } from "@/app/_lib/data-service";
 import React, { Suspense } from "react";
 
@@ -15,6 +16,7 @@ const page = async () => {
         <HeroWrapper />
       </Suspense>
       <Features />
+      <HowItWorks />
       <Faq />
       <CtaSection />
     </div>
