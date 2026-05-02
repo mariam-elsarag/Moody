@@ -33,7 +33,10 @@ const HowItWorks = () => {
   const locale = useLocale();
   const isRtl = locale === "ar";
   return (
-    <section className="landing_container section_p flex flex-col main_gap ">
+    <section
+      id="methodology"
+      className="landing_container section_p flex flex-col main_gap "
+    >
       <Section_Header title="how_it_works_title" />
       <motion.section
         variants={containerVariants}

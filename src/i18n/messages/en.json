@@ -39,5 +39,11 @@
   "cta_section_title": "Start your journey with Moody today",
   "cta_section_description": "Join over 10,000 people finding mental clarity and peace with their personal AI companion.",
   "get_started_free": "Get Started Free",
-  "how_it_works_title": "Three steps to clarity"
+  "how_it_works_title": "Three steps to clarity",
+  "trust_section_title": "Your trust is our priority",
+  "trust_section_description": "We use end-to-end encryption for all your conversations and journals. Your data is your own—we never sell it, and even our AI engineers can't read your private thoughts.",
+  "hipaa_title": "HIPAA Compliant",
+  "hipaa_description": "Meeting the highest standards for health data privacy.",
+  "encryption_title": "E2E Encryption",
+  "encryption_description": "Only you hold the key to your emotional archives."
 }
